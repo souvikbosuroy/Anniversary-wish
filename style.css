@@ -68,3 +68,21 @@
     box-shadow: 0 2px 2px 4px #ff202022;
     cursor: pointer;
 }
+
+@media(max-width: 767px) {
+    .front_box {
+        gap: 15px;
+    }
+    #hello {
+        font-size: 48px !important;
+        line-height: 56px !important;
+    }
+    .sub_heading {
+        font-size: 20px !important;
+        gap: 8px;
+    }
+    #day_counter {
+        font-size: 34px !important;
+        font-weight: 600;
+    }
+}
