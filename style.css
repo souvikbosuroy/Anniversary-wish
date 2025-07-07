@@ -24,7 +24,10 @@
 }
 
 .front_box {
-    background-color: #ff799b;
+    background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.3)) , url(./WhatsApp\ Image\ 2025-07-07\ at\ 23.35.19.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -34,6 +37,7 @@
     gap: 30px;
     position: relative;
     overflow: hidden;
+    padding: 20px 15px;
 }
 
 .bg_video {
@@ -65,8 +69,16 @@
     border: none;
     padding: 15px 30px;
     border-radius: 60px;
-    box-shadow: 0 2px 2px 4px #ff202022;
     cursor: pointer;
+}
+
+.transparent_btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 18px;
+    color: #fff;
 }
 
 @media(max-width: 767px) {
@@ -74,8 +86,8 @@
         gap: 15px;
     }
     #hello {
-        font-size: 48px !important;
-        line-height: 56px !important;
+        font-size: 40px !important;
+        line-height: 48px !important;
     }
     .sub_heading {
         font-size: 20px !important;

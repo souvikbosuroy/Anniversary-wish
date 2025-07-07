@@ -47,8 +47,8 @@ let dayCounter = document.querySelector("#day_counter");
 let frontHiddenVideo = document.querySelector(".bg_video");
 
 sub_heading.style.color = "#fff";
-sub_heading.style.fontSize = "36px";
-dayCounter.style.color = "#000";
+sub_heading.style.fontSize = "40px";
+dayCounter.style.color = "#f00";
 dayCounter.style.fontSize = "48px";
 
 let i = 0;
@@ -67,16 +67,21 @@ sub_heading.after(showLove);
 const audio = document.getElementById("bgAudio");
 
 showLove.addEventListener("click", (singleClick) => {
-    showLove.style.transform = "scale(1.1)";
-    showLove.style.backgroundColor = "#000";
-    showLove.style.color = "#fff";
     frontBox.style.backgroundColor = "transparent";
-    helloGreet.style.color = "#000";
-    sub_heading.style.color = "#000";
+    frontBox.style.background = "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))";
+    helloGreet.innerText = "I Love You for a Thousand Years";
+    helloGreet.style.textAlign = "center";
+    helloGreet.style.color = "#fff";
+    sub_heading.style.color = "#fff";
     frontHiddenVideo.style.visibility = "visible";
     frontHiddenVideo.style.opacity = "1";
     frontHiddenVideo.style.zIndex = "-1";
-
+    sub_heading.innerText = "Thank you for your patience towards me.\n" +
+    "Thank you for always being there for me like a momma elephant takes care of her child.";
+    sub_heading.style.textAlign = "center";
+    sub_heading.style.fontSize = "18px";
+    showLove.classList.add("transparent_btn");
+    showLove.innerText = "Now, keep smiling my champ! We will achieve everything we have dreamt of.";
     audio.play().catch(err => {
         console.warn("Autoplay was blocked:", err);
     });
