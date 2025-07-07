@@ -24,12 +24,12 @@
 }
 
 .front_box {
-    background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.3)) , url(./WhatsApp\ Image\ 2025-07-07\ at\ 23.35.19.jpeg);
+    background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.3)) , url(./WhatsApp\ Image\ 2025-07-07\ at\ 23.35.40.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,6 +84,7 @@
 @media(max-width: 767px) {
     .front_box {
         gap: 15px;
+        min-height: 100svh;
     }
     #hello {
         font-size: 40px !important;
